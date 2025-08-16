@@ -44,14 +44,14 @@ The app demonstrates **end-to-end DevOps skills**: automated build, containeriza
 git clone https://github.com/<username>/weather-app.git
 cd weather-app
 npm install
-node index.js
+node index.js ```
 
 Open browser: http://localhost:3000
 
 Docker Setup
 
-docker build -t weather-app .
-docker run -d -p 3000:3000 --name weather-app-container weather-app
+```bash docker build -t weather-app .
+docker run -d -p 3000:3000 --name weather-app-container weather-app ```
 
 Open browser: http://<EC2_PUBLIC_IP>:3000
 
